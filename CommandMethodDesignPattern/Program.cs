@@ -6,6 +6,10 @@ remoteControl.Execute(new LightOnCommand(light));
 remoteControl.Execute(new LightOffCommand(light));
 Stereo stereo = new Stereo();
 remoteControl.Execute(new StereoOnCommand(stereo));
-
 remoteControl.Execute(new StereoOffCommand(stereo));
+
+///////////////////////////////////////////////////
+
+Invoker invoker = new Invoker();
+Console.WriteLine(invoker.GetCommand("file"));
 
